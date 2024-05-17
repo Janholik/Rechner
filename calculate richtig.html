@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>calculatore</title>
+		<script>
+			function addTwoNubers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			 var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1+num2;
+			}
+			function average()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			 var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1+num2)/2;
+			}
+			function minus()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			 var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1-num2;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>fan with calculatore</h1>
+		<form>
+		<label for="fnumber">Firstnumber:</label>
+		<input type="text" id="fnumber" name="fnumber"><br><br>
+		<label for="snumber">Second Number:</label>
+		<input type="text" id="snumber" name="snumber"><br><br>
+		</form>
+		<button onclick="addTwoNubers()">	
+		sum
+		</button>
+		<button onclick="average()">
+		average
+		</button>
+		<button onclick="minus()">
+		minus
+		</button>
+		<p id="result">
+		</p>
+</body>
+</html>
+
